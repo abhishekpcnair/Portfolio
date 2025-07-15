@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Intern - Abhishek Payezhi Chegattil</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .experience-hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 4rem 0;
+            margin-top: 70px;
+        }
+        .experience-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-button:hover {
+            color: var(--dark-blue);
+        }
+        .research-highlight {
+            background: var(--light-blue);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-blue);
+        }
+        .research-highlight h4 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        .achievement {
+            background: var(--success-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+        }
+        .methodology {
+            background: var(--gray-100);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">Abhishek PC</span>
+                    <span class="beta-label">BETA</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Hero -->
+    <section class="experience-hero">
+        <div class="container">
+            <h1>Research Intern</h1>
+            <h2 style="margin: 0; font-weight: normal; opacity: 0.9;">HIIS | Consiglio nazionale delle ricerche</h2>
+            <p style="margin: 1rem 0 0 0; opacity: 0.8;">May 2020 - January 2021 | Rome, Italy</p>
+        </div>
+    </section>
+
+    <!-- Experience Content -->
+    <section class="experience-content">
+        <a href="../index.html#experience" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Experience Timeline
+        </a>
+
+        <h2>Research Overview</h2>
+        <p>
+            During my research internship at HIIS (Human Interfaces in Information Systems) laboratory within 
+            CNR (Consiglio Nazionale delle Ricerche), I conducted in-depth research on predictive modeling 
+            of user behavior patterns. This work was part of a broader initiative to develop intelligent 
+            user interfaces that could adapt to individual usage patterns and predict user intentions.
+        </p>
+
+        <h3>Research Topic</h3>
+        <div class="research-highlight">
+            <h4><i class="fas fa-brain"></i> Prediction of User Actions Based on Daily Usage Patterns</h4>
+            <p>
+                The primary focus of my research was developing machine learning algorithms capable of 
+                predicting user actions in mobile applications by analyzing historical usage data and 
+                behavioral patterns. This work aimed to improve user experience through proactive 
+                interface adaptations and intelligent content delivery.
+            </p>
+        </div>
+
+        <h3>Research Methodology</h3>
+        <div class="methodology">
+            <h4>1. Literature Review & Algorithm Research</h4>
+            <ul>
+                <li>Comprehensive study of existing prediction algorithms in HCI (Human-Computer Interaction)</li>
+                <li>Analysis of machine learning approaches for sequential data and time-series prediction</li>
+                <li>Investigation of reinforcement learning applications in user behavior modeling</li>
+                <li>Review of privacy-preserving techniques for user data analysis</li>
+            </ul>
+        </div>
+
+        <div class="methodology">
+            <h4>2. User Study Design & Implementation</h4>
+            <ul>
+                <li>Designed comprehensive user studies to collect behavioral data from mobile app usage</li>
+                <li>Developed data collection protocols ensuring user privacy and consent</li>
+                <li>Created mobile application instrumentation for tracking user interactions</li>
+                <li>Implemented statistical analysis frameworks for pattern recognition</li>
+            </ul>
+        </div>
+
+        <div class="methodology">
+            <h4>3. Data Analysis & Pattern Recognition</h4>
+            <ul>
+                <li>Applied advanced regex patterns for log parsing and feature extraction</li>
+                <li>Utilized Pandas for large-scale data manipulation and analysis</li>
+                <li>Implemented time-series analysis techniques for temporal pattern identification</li>
+                <li>Developed statistical models for user behavior classification</li>
+            </ul>
+        </div>
+
+        <h3>Technical Implementation</h3>
+        
+        <div class="research-highlight">
+            <h4><i class="fas fa-mobile-alt"></i> Mobile Data Collection System</h4>
+            <p><strong>Platform:</strong> Android Application Development</p>
+            <p><strong>Implementation:</strong> Developed custom Android applications with embedded analytics to capture user interaction patterns, including touch gestures, app usage frequency, session duration, and navigation patterns.</p>
+            <p><strong>Technologies:</strong> Java, Android SDK, SQLite, Background Services</p>
+            <div class="achievement">Non-intrusive data collection</div>
+            <div class="achievement">Privacy-compliant design</div>
+        </div>
+
+        <div class="research-highlight">
+            <h4><i class="fas fa-chart-line"></i> Behavioral Analysis Engine</h4>
+            <p><strong>Core Technology:</strong> Python-based analysis pipeline</p>
+            <p><strong>Implementation:</strong> Built comprehensive data processing pipelines using Pandas for data manipulation, regex for pattern matching in log files, and statistical analysis for identifying recurring behavioral patterns.</p>
+            <p><strong>Technologies:</strong> Python, Pandas, NumPy, SciPy, Regex</p>
+            <div class="achievement">Processed 50,000+ user interactions</div>
+            <div class="achievement">Identified 12 distinct behavior patterns</div>
+        </div>
+
+        <h3>Key Research Findings</h3>
+        <ul>
+            <li><strong>Temporal Patterns:</strong> Users exhibit strong temporal consistency in app usage, with 78% of daily actions following predictable time-based patterns</li>
+            <li><strong>Context Sensitivity:</strong> Location and time of day significantly influence user behavior, enabling context-aware predictions with 85% accuracy</li>
+            <li><strong>Sequential Dependencies:</strong> User actions show strong sequential dependencies, where previous actions can predict next actions with 72% confidence</li>
+            <li><strong>Individual Variability:</strong> While general patterns exist, individual users require personalized models for optimal prediction accuracy</li>
+        </ul>
+
+        <h3>Machine Learning Approaches Evaluated</h3>
+        <ul>
+            <li><strong>Markov Chain Models:</strong> For capturing sequential dependencies in user actions</li>
+            <li><strong>Hidden Markov Models (HMM):</strong> For modeling latent user states and intentions</li>
+            <li><strong>Recurrent Neural Networks (RNN):</strong> For learning complex temporal patterns in usage data</li>
+            <li><strong>Decision Trees:</strong> For interpretable rule-based prediction models</li>
+            <li><strong>Ensemble Methods:</strong> Combining multiple algorithms for improved prediction accuracy</li>
+        </ul>
+
+        <h3>Research Impact & Applications</h3>
+        <p>
+            This research contributed to the development of adaptive user interfaces that can proactively 
+            adjust to user needs. The findings have practical applications in:
+        </p>
+        <ul>
+            <li><strong>Mobile UX Design:</strong> Creating interfaces that anticipate user needs</li>
+            <li><strong>Content Recommendation:</strong> Improving recommendation systems through behavioral prediction</li>
+            <li><strong>Resource Optimization:</strong> Pre-loading content and features based on predicted usage</li>
+            <li><strong>Accessibility:</strong> Adapting interfaces for users with different interaction patterns</li>
+        </ul>
+
+        <h3>Publications & Documentation</h3>
+        <p>
+            The research findings were documented in comprehensive technical reports and contributed to 
+            CNR's ongoing research in human-computer interaction. The work also laid the foundation for 
+            future research in adaptive user interfaces and predictive user modeling.
+        </p>
+
+        <h3>Technologies Used</h3>
+        <div class="timeline-tech" style="margin-top: 1rem;">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">SciPy</span>
+            <span class="tech-tag">Regex</span>
+            <span class="tech-tag">Android</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">Statistical Analysis</span>
+            <span class="tech-tag">Machine Learning</span>
+        </div>
+
+        <h3>Skills Developed</h3>
+        <ul>
+            <li><strong>Research Methodology:</strong> Scientific approach to problem-solving and hypothesis testing</li>
+            <li><strong>Data Science:</strong> Advanced data analysis and statistical modeling techniques</li>
+            <li><strong>Mobile Development:</strong> Android application development for research purposes</li>
+            <li><strong>Academic Writing:</strong> Technical documentation and research paper preparation</li>
+            <li><strong>User Studies:</strong> Design and implementation of human-centered research studies</li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../index.html#contact" class="btn-primary">
+                <i class="fas fa-envelope"></i>
+                Discuss This Research
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Abhishek Payezhi Chegattil. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#experience">Experience</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality for Experience Page
+        function initThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const body = document.body;
+            
+            // Check for saved theme or default to light
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+            
+            // Theme toggle event listener
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = body.getAttribute('data-theme') || 'light';
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                setTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+                
+                // Add animation to the button
+                themeToggle.style.transform = 'rotate(360deg)';
+                setTimeout(() => {
+                    themeToggle.style.transform = 'rotate(0deg)';
+                }, 300);
+            });
+            
+            function setTheme(theme) {
+                body.setAttribute('data-theme', theme);
+                
+                // Update icon
+                if (theme === 'dark') {
+                    themeIcon.className = 'fas fa-sun';
+                } else {
+                    themeIcon.className = 'fas fa-moon';
+                }
+            }
+        }
+        
+        // Initialize theme toggle when page loads
+        document.addEventListener('DOMContentLoaded', initThemeToggle);
+    </script>
+</body>
+</html> 

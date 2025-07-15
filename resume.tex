@@ -1,0 +1,170 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.93]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{paracol}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\renewcommand*{\namefont}{\fontsize{19}{16}\selectfont}
+\name{Abhishek}{Payezhi Chegattil}
+
+\newcommand*{\customcventry}[7][.10em]{
+	\begin{tabular}{@{}l}
+		{\bfseries #4} \
+		{\itshape #3}
+	\end{tabular}
+	\hfill
+	\begin{tabular}{l@{}}
+		{\bfseries #5} \
+		{\itshape #2}
+	\end{tabular}
+	\ifx&#7&%
+	\else{\
+		\begin{minipage}{\maincolumnwidth}%
+			\small#7%
+	\end{minipage}}\fi%
+	\par\addvspace{#1}}
+
+\begin{document}
+
+	
+	\makecvtitle
+	\vspace{-0.6in}
+	
+	\begin{center}\textbf{ Software Engineer}\end{center}
+	\begin{center}
+		\begin{tabular}{ c c c }
+			\faMobile\enspace +39 3494913139 & \enspace abhishekp.cnair@gmail.com & \faHome\enspace Torino, Italy \\
+			\faLinkedin\enspace \color{blue} \href{www.linkedin.com/in/abhishek-payezhi-chegattil}{in/abhishek-payezhi-chegattil} &
+			\enspace\faGithub\enspace \color{blue} \href{https://github.com/abhishekpcnair}{github.com/abhishekpcnair} & \enspace\faGitlab\enspace \color{blue} \href{https://gitlab.com/abhishekp.cnair}{gitlab.com/abhishekp.cnair}
+		\end{tabular}
+	\end{center}
+	\begin{comment}
+	\section{Profile}
+	{Innovative Digital Marketing Manager with 5+ years of experience managing online marketing campaigns and leading cross-functional teams. Skilled in developing integrated marketing strategies that drive brand awareness, engagement, and conversions. Regularly exceed performance targets and possess advanced analytical and problem solving skills. Adept at leveraging cutting-edge digital tools and platforms to achieve marketing objectives.}
+	\section{Areas of Expertise}
+	{Content Marketing - WordPress - Content Strategy - Search Engine Ranking - Data Analysis - Visualizing with Advanced Charts - Social Media - Email Marketing - User Experience - Digital Strategy - Campaign Management - Lead Generation}
+	\end{comment}
+
+	
+	
+	
+	\section{Professional Experience}
+	\customcventry{09/2022 ‐ present}{{\color{blue}\href{https://www.capgemini.com/it-it/chi-siamo/scopri-capgemini/i-nostri-brand/capgemini-engineering/}{(Capgemini Engineering)}}}{Professional AI and Data Engineer,}{Torino, Italy}{}{
+		{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+				\itemsep0em 
+				\item Actively participated in RFP, resource allocation, development and documentation for small scale to large scale EU projects 
+                    \item Implemented SSO and monitoring dashboards for critical data analysis and production monitoring
+                    \item Led Engineering teams and optimized computational algorithms for improved performance
+                    \item Deployed advanced data solutions, including Large language models(LLM) and custom SDK's
+	\end{itemize}}}
+	\begin{itemize}
+		\item[]\small\textbf{\emph{Grafana, Pyspark, Kubernetes, Bentoml, VLLM, Langchain, DataLake, Prometheus}}
+	\end{itemize}
+\begin{comment}
+- ENI
+	- Recovered data from archived pdf using textract
+	- Displayed them in the webapp
+	AWS Textract, flask, jinja
+- Saipem 
+	- Integerated Keyclock with the grafana for SSO Authentication
+	- Created grafana dashabords to view critical data to monitor production line on ships
+	- Handled a team of 4 engineers with varying level of seniority to effectively complete the project
+	Postgres, grafana
+- ESA
+	- Created a platform for engineers to user various tools like dask, spark and zeppeline
+	- Deployed the platform using kubernetes
+	Kubernetes
+- Terna
+	- Created ETL pipeline from sych data to the warehouse
+	- Created dashboards and provisions to view logs of the ETL in a webapp
+	Django, Postgres, DynamoDB, SQlachemy, jinja, AWSEC2
+- ENEL
+	- Actively worked with Engineers to parallelise the algorithm with muliprocessing/threading
+	Python
+- AIDA
+	- Deployed LLM to serve request using bentoml
+	- Created chatbot with RAG to answer queries about technical specification of different housing appliances
+	Bentoml, Langchain, LLM, VLLM
+- Hitachi Rail
+	- Created SDK to get data from minio and trino
+\end{comment}
+
+	\customcventry{05/2020 ‐ 01/2021}{{\color{blue}\href{https://hiis.isti.cnr.it/lab/home}{(HIIS | Consiglio nazionale delle ricerche)}}}{Research Intern,}{Rome, Italy}{}{
+		{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+				\itemsep0em 
+				\item Topic - Prediction of user actions based on daily usage.
+				\item Designed and conducted comprehensive users study as part of the research
+				\item Literature study on finding the algorithms that can be deployed for the prediction is user actions
+	\end{itemize}}}
+	\begin{itemize}
+		\item[]\small\textbf{\emph{Python, Pandas, regex, Android, Java}}
+	\end{itemize}
+	\customcventry{09/2017 ‐ 01/2020}{{\color{blue}\href{https://eternl.in/eternl/}{(Eternl ResilientTech Pvt Lts,)}}}{Data Analyst and Backend Dev,}{Banglore, India}{}{
+		{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+				\itemsep0em 
+				\item Reduced the energy consumption of a fuel bunk using IOT automation by 27\%.
+				\item Handled Front-end team for the API/Backend Integeration.
+				\item Designed and Engineered cloud infrastructure for handling user traffic in AWS.
+				\item Performed Numerical Analysis on the IoT sensors such as Dual Source energy meter, Branch circuit meter to find anomalies etc.
+				\item Conducted internal literature study on predicting the Crude oil prices using different Machine learning
+				algorithms(Linear and Gaussian)
+	\end{itemize}}}
+	\begin{itemize}
+		\item[]\small \textbf{\emph{Flask, Python,Airflow, Nginx, Docker, MongoDB, Linux, REST API, Apache-Kafka, CrateDB, APScheduler, Celery}}
+	\end{itemize}
+\begin{comment}	
+	\customcventry{06/2016 ‐ 09/2017}{{\color{blue}\href{https://www.google.com/}{(Tiino techmations, LLC)}}}{Full Stack web developer(Intern)}{Coimbatore, India}{}{
+		{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+				\itemsep0em 
+				\item Conducted an Internal Literature study regarding the impact of colors on Humans and how it can be used to enhance the personalisation of websites
+				\item Developed a tender-quotation and business card managment tool for the company
+	\end{itemize}}}
+\end{comment}
+	
+	\section{Education}
+	\customcventry{2018-2021}{\color{blue}\href{https://www.unitn.it/en}{University of Trento}}{Masters in Computer Science}{Trento, Italy}{}{}{Courses: Machine Learning, Deep Learning, Big Data and Social Networks, Fog and Cloud Computing,Data Mining, Web Architectures, Requirement Engineering.}
+	\begin{itemize}[label={\textbullet}]
+		\itemsep0em 
+		\item Developed a consonant and vowel classifier using VGG-16 Neural Network with PyTorch
+		\item A comprehensive requirement study on the need of Adaptive Intelligent User Interface
+		\item Service automation using Openstack cloud computing platform
+	
+	\end{itemize}
+\section{Online Courses \& Certifications}
+{\begin{itemize}[label=\textbullet]
+		\itemsep0em
+            \item KCNA-Kubernetes Cloud native associate (Nov. 2024)
+		\item SUSE Technical Sales Specialist - SUSE Rancher (Mar. 2024)
+		\item Italiano A2 (Aug. 2023) - \underline{\color{blue}\href{https://online.unistrasi.it/cils/attestati/20230720/431413_20230720_SINGOLO.pdf}{Università per Stranieri di Siena}}
+		%\item Twinzo Partner certification (Apr. 2024)
+\end{itemize}} 
+	
+	\section{Skills}
+	{\begin{itemize}[label=\textbullet]
+			\itemsep0em 
+			\item {\textbf{Programming:} Python, Java, php, Javascript, CSS, Jquery}
+			\item {\textbf{Frameworks:} Spark, Flask, codeigniter, FastApi, Django, Angular 4}
+			\item {\textbf{Database:} MongoDb, MySql, CrateDB, Postgres, Trino}
+			\item {\textbf{Deployment:} AWS, Apache-Kafka, Nginx, Kubernetes, gunicorn,Docker, Open stack, Vagrant, git, tmux, vim}
+			\item {\textbf{Libraries:} pandas, scipy, Pytorch, pyspark, matplotlib, seaborn}
+			\item {\textbf{Operating system:} Mac OS, Debian - Ubuntu, Arch - Manjaro, Windows}
+	\end{itemize}}
+	
+	\section{Languages}
+	\begin{multicols}{2}
+		\begin{itemize}[label=\textbullet]
+			\item \textbf{English} [C1]
+			\item {\textbf{Italian} [A2]}
+		\end{itemize}
+	\end{multicols}
+\end{document}

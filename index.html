@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Payezhi Chegattil - Data Engineer & Kubernetes Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40">
+                        <!-- Outer circle representing container -->
+                        <circle cx="20" cy="20" r="18" fill="none" stroke="var(--primary-blue)" stroke-width="2"/>
+                        <!-- Inner hexagon representing Kubernetes -->
+                        <polygon points="20,8 28,12 28,20 20,24 12,20 12,12" fill="none" stroke="var(--primary-blue)" stroke-width="1.5"/>
+                        <!-- Center dot -->
+                        <circle cx="20" cy="20" r="3" fill="var(--primary-blue)"/>
+                        <!-- Small dots representing pods -->
+                        <circle cx="20" cy="12" r="1.5" fill="var(--secondary-blue)"/>
+                        <circle cx="28" cy="16" r="1.5" fill="var(--secondary-blue)"/>
+                        <circle cx="28" cy="24" r="1.5" fill="var(--secondary-blue)"/>
+                        <circle cx="20" cy="28" r="1.5" fill="var(--secondary-blue)"/>
+                        <circle cx="12" cy="24" r="1.5" fill="var(--secondary-blue)"/>
+                        <circle cx="12" cy="16" r="1.5" fill="var(--secondary-blue)"/>
+                    </svg>
+                    <span class="logo-text">APC</span>
+                    <span class="beta-label">BETA</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Abhishek Payezhi Chegattil</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Data Engineer & Kubernetes Specialist</h2>
+                    <p class="hero-description">
+                        Professional AI and Data Engineer specializing in cloud-native solutions, 
+                        Kubernetes orchestration, and large-scale data processing systems.
+                        Based in Torino, Italy.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn-secondary">View Projects</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/abhishek-payezhi-chegattil" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abhishekpcnair" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://gitlab.com/abhishekp.cnair" target="_blank" class="social-link">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile.jpg" alt="Abhishek Payezhi Chegattil" class="profile-img">
+                        <div class="kubernetes-badge">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Data Engineer with expertise in building scalable, cloud-native solutions. 
+                        Currently working as a Professional AI and Data Engineer, I specialize in Kubernetes 
+                        orchestration, advanced data processing, and machine learning deployments.
+                    </p>
+                    <p>
+                        My experience spans across various industries, from energy to space technology, 
+                        where I've successfully led engineering teams and implemented cutting-edge solutions 
+                        involving Large Language Models, data pipelines, and monitoring systems.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Major Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Professional AI and Data Engineer</h3>
+                        <h4 class="timeline-company">Engineering Consultancy</h4>
+                        <p class="timeline-period">September 2022 - Present | Torino, Italy</p>
+                        <p class="timeline-summary">
+                            Leading advanced data engineering projects across EU, from LLM deployments to 
+                            Kubernetes orchestration, with focus on scalable cloud-native solutions.
+                        </p>
+                        <div class="timeline-actions">
+                            <a href="experience/current-role.html" class="btn-detail">
+                                <i class="fas fa-arrow-right"></i>
+                                Read Detailed Experience
+                            </a>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Grafana</span>
+                            <span class="tech-tag">PySpark</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">BentoML</span>
+                            <span class="tech-tag">VLLM</span>
+                            <span class="tech-tag">Langchain</span>
+                            <span class="tech-tag">DataLake</span>
+                            <span class="tech-tag">Prometheus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Research Intern</h3>
+                        <h4 class="timeline-company">HIIS | Consiglio nazionale delle ricerche</h4>
+                        <p class="timeline-period">May 2020 - January 2021 | Rome, Italy</p>
+                        <p class="timeline-summary">
+                            Conducted research on predicting user actions through behavioral analysis, 
+                            developing algorithms for mobile interaction prediction systems.
+                        </p>
+                        <div class="timeline-actions">
+                            <a href="experience/research-intern.html" class="btn-detail">
+                                <i class="fas fa-arrow-right"></i>
+                                Read Detailed Experience
+                            </a>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Regex</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Data Analyst and Backend Developer</h3>
+                        <h4 class="timeline-company">Eternl ResilientTech Pvt Ltd</h4>
+                        <p class="timeline-period">September 2017 - January 2020 | Bangalore, India</p>
+                        <p class="timeline-summary">
+                            Built IoT automation systems achieving 27% energy reduction, designed cloud infrastructure, 
+                            and developed machine learning models for crude oil price prediction.
+                        </p>
+                        <div class="timeline-actions">
+                            <a href="experience/data-analyst.html" class="btn-detail">
+                                <i class="fas fa-arrow-right"></i>
+                                Read Detailed Experience
+                            </a>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Pod Reaper (Podr) 💀</h3>
+                        <a href="https://github.com/abhishekpcnair/Podr" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        A powerful CLI tool for Kubernetes cluster cleanup. Automatically finds and deletes pods 
+                        and jobs in specific states (Succeeded, Failed, Error). Features dry-run mode, namespace 
+                        flexibility, and CronJob generation for automated cluster hygiene.
+                    </p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 1</span>
+                        <span><i class="fas fa-code-branch"></i> 0</span>
+                        <span><i class="fas fa-download"></i> PyPI</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">CLI</span>
+                        <span class="tech-tag">PyTest</span>
+                        <span class="tech-tag">GitOps</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Document Processing System</h3>
+                    </div>
+                    <p class="project-description">
+                        Recovered data from archived PDFs using AWS Textract and displayed them in a web application 
+                        with Flask and Jinja templating.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS Textract</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Jinja</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Production Monitoring Dashboard</h3>
+                    </div>
+                    <p class="project-description">
+                        Integrated Keycloak with Grafana for SSO Authentication and created monitoring dashboards 
+                        to view critical data for production line monitoring. Led a team of 4 engineers.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Keycloak</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">SSO</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Data Engineering Platform</h3>
+                    </div>
+                    <p class="project-description">
+                        Created a platform for engineers to use various tools like Dask, Spark and Zeppelin. 
+                        Deployed the entire platform using Kubernetes orchestration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Dask</span>
+                        <span class="tech-tag">Zeppelin</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Chatbot with RAG</h3>
+                    </div>
+                    <p class="project-description">
+                        Deployed Large Language Models using BentoML and created a chatbot with RAG to answer 
+                        queries about technical specifications of housing appliances.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">BentoML</span>
+                        <span class="tech-tag">Langchain</span>
+                        <span class="tech-tag">LLM</span>
+                        <span class="tech-tag">VLLM</span>
+                        <span class="tech-tag">RAG</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-database"></i>
+                        <h3>ETL Pipeline & Monitoring</h3>
+                    </div>
+                    <p class="project-description">
+                        Created ETL pipeline to sync data to warehouse and built dashboards with provisions 
+                        to view logs of the ETL in a web application.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">DynamoDB</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                        <span class="tech-tag">AWS EC2</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Data SDK Development</h3>
+                    </div>
+                    <p class="project-description">
+                        Created custom SDK to retrieve and process data from MinIO and Trino for efficient 
+                        data access and manipulation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python SDK</span>
+                        <span class="tech-tag">MinIO</span>
+                        <span class="tech-tag">Trino</span>
+                        <span class="tech-tag">Data Processing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">jQuery</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-layer-group"></i>
+                        Frameworks & Tools
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Angular 4</span>
+                        <span class="skill-tag">CodeIgniter</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-database"></i>
+                        Databases
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">CrateDB</span>
+                        <span class="skill-tag">Trino</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-cloud"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Apache Kafka</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">OpenStack</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-brain"></i>
+                        AI/ML Libraries
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">SciPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-desktop"></i>
+                        Operating Systems
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">macOS</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">Debian</span>
+                        <span class="skill-tag">Manjaro</span>
+                        <span class="skill-tag">Windows</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Master's in Computer Science</h3>
+                            <h4>University of Trento</h4>
+                            <p class="education-period">2018 - 2021 | Trento, Italy</p>
+                        </div>
+                    </div>
+                    <div class="education-description">
+                        <p><strong>Key Courses:</strong> Machine Learning, Deep Learning, Big Data and Social Networks, 
+                        Fog and Cloud Computing, Data Mining, Web Architectures, Requirement Engineering.</p>
+                        <ul>
+                            <li>Developed a consonant and vowel classifier using VGG-16 Neural Network with PyTorch</li>
+                            <li>Comprehensive requirement study on the need of Adaptive Intelligent User Interface</li>
+                            <li>Service automation using OpenStack cloud computing platform</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="certifications">
+                    <h3 class="certifications-title">
+                        <i class="fas fa-certificate"></i>
+                        Professional Certifications
+                    </h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-dharmachakra"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>KCNA - Kubernetes Cloud Native Associate</h4>
+                                <p>November 2024</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>SUSE Technical Sales Specialist - SUSE Rancher</h4>
+                                <p>March 2024</p>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Italiano A2</h4>
+                                <p>August 2023 - Università per Stranieri di Siena</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest from LinkedIn, Medium & Dev.to</h2>
+            <div class="blog-grid">
+                <div class="blog-section">
+                    <h3 class="blog-section-title">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn Posts
+                    </h3>
+                    <div id="linkedin-posts" class="posts-container">
+                        <div class="loading">Loading latest LinkedIn posts...</div>
+                    </div>
+                </div>
+                <div class="blog-section">
+                    <h3 class="blog-section-title">
+                        <i class="fab fa-medium"></i>
+                        Medium Articles
+                    </h3>
+                    <div id="medium-articles" class="posts-container">
+                        <div class="loading">Loading latest Medium articles...</div>
+                    </div>
+                </div>
+                <div class="blog-section">
+                    <h3 class="blog-section-title">
+                        <i class="fab fa-dev"></i>
+                        Dev.to Stories
+                    </h3>
+                    <div id="devto-articles" class="posts-container">
+                        <div class="loading">Loading latest Dev.to stories...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a conversation about technology and data engineering.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+39 3494913139</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>abhishekp.cnair@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Torino, Italy</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/abhishek-payezhi-chegattil" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abhishekpcnair" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://gitlab.com/abhishekp.cnair" target="_blank" class="social-link">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Abhishek Payezhi Chegattil. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

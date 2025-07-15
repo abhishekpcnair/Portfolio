@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional AI and Data Engineer - Abhishek Payezhi Chegattil</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .experience-hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 4rem 0;
+            margin-top: 70px;
+        }
+        .experience-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-button:hover {
+            color: var(--dark-blue);
+        }
+        .project-highlight {
+            background: var(--light-blue);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-blue);
+        }
+        .project-highlight h4 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        .achievement {
+            background: var(--success-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">Abhishek PC</span>
+                    <span class="beta-label">BETA</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Hero -->
+    <section class="experience-hero">
+        <div class="container">
+            <h1>Professional AI and Data Engineer</h1>
+            <h2 style="margin: 0; font-weight: normal; opacity: 0.9;">Engineering Consultancy</h2>
+            <p style="margin: 1rem 0 0 0; opacity: 0.8;">September 2022 - Present | Torino, Italy</p>
+        </div>
+    </section>
+
+    <!-- Experience Content -->
+    <section class="experience-content">
+        <a href="../index.html#experience" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Experience Timeline
+        </a>
+
+        <h2>Role Overview</h2>
+        <p>
+            As a Professional AI and Data Engineer at a leading engineering consultancy, I specialize in developing 
+            cutting-edge data solutions for large-scale European Union projects. My work spans from traditional 
+            data engineering to advanced AI implementations, with a strong focus on cloud-native architectures 
+            and Kubernetes orchestration.
+        </p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><strong>Project Leadership:</strong> Actively participate in RFP processes, resource allocation, and technical documentation for projects ranging from small-scale implementations to enterprise-level EU initiatives</li>
+            <li><strong>System Architecture:</strong> Design and implement scalable data processing architectures using cloud-native technologies and microservices patterns</li>
+            <li><strong>Team Management:</strong> Lead cross-functional engineering teams, providing technical guidance and ensuring project delivery within scope and timeline</li>
+            <li><strong>AI/ML Deployment:</strong> Deploy and manage Large Language Models (LLM) and custom machine learning solutions in production environments</li>
+            <li><strong>DevOps & Infrastructure:</strong> Manage Kubernetes clusters, implement CI/CD pipelines, and ensure high availability of data processing systems</li>
+        </ul>
+
+        <h3>Major Projects & Achievements</h3>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-oil-well"></i> Energy Sector Data Recovery System</h4>
+            <p><strong>Client:</strong> Major Energy Corporation</p>
+            <p><strong>Challenge:</strong> Recover and process critical data from thousands of archived PDF documents containing historical operational data.</p>
+            <p><strong>Solution:</strong> Implemented AWS Textract for automated document processing, developed a Flask-based web application for data visualization and search.</p>
+            <p><strong>Technologies:</strong> AWS Textract, Flask, Jinja2, Python, Document Processing</p>
+            <div class="achievement">Recovered 15+ years of historical data</div>
+            <div class="achievement">95% accuracy in data extraction</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-ship"></i> Maritime Production Monitoring System</h4>
+            <p><strong>Client:</strong> Global Marine Engineering Company</p>
+            <p><strong>Challenge:</strong> Create real-time monitoring dashboards for production lines on offshore vessels with secure authentication.</p>
+            <p><strong>Solution:</strong> Integrated Keycloak with Grafana for SSO authentication, designed comprehensive monitoring dashboards for critical production metrics.</p>
+            <p><strong>Technologies:</strong> Grafana, Keycloak, PostgreSQL, SSO, Real-time Analytics</p>
+            <div class="achievement">Led team of 4 engineers</div>
+            <div class="achievement">24/7 production monitoring</div>
+            <div class="achievement">Zero security incidents</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-satellite"></i> Space Technology Data Platform</h4>
+            <p><strong>Client:</strong> European Space Agency</p>
+            <p><strong>Challenge:</strong> Build a unified platform for engineers to utilize various big data tools including Dask, Spark, and Zeppelin.</p>
+            <p><strong>Solution:</strong> Designed and deployed a comprehensive data engineering platform using Kubernetes orchestration for scalable resource management.</p>
+            <p><strong>Technologies:</strong> Kubernetes, Apache Spark, Dask, Zeppelin, Container Orchestration</p>
+            <div class="achievement">Supports 100+ concurrent users</div>
+            <div class="achievement">Auto-scaling capabilities</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-bolt"></i> Energy Grid ETL Pipeline</h4>
+            <p><strong>Client:</strong> National Energy Transmission Company</p>
+            <p><strong>Challenge:</strong> Create robust ETL pipelines to synchronize massive energy grid data to data warehouse with comprehensive monitoring.</p>
+            <p><strong>Solution:</strong> Built scalable ETL infrastructure with Django-based monitoring dashboard and comprehensive logging system.</p>
+            <p><strong>Technologies:</strong> Django, PostgreSQL, DynamoDB, SQLAlchemy, AWS EC2, ETL Pipelines</p>
+            <div class="achievement">Processes 10M+ records daily</div>
+            <div class="achievement">99.9% pipeline reliability</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-robot"></i> AI-Powered Technical Documentation Assistant</h4>
+            <p><strong>Client:</strong> Home Appliance AI Initiative</p>
+            <p><strong>Challenge:</strong> Deploy Large Language Models to create an intelligent chatbot for technical specification queries.</p>
+            <p><strong>Solution:</strong> Implemented RAG (Retrieval-Augmented Generation) system using BentoML for LLM deployment and Langchain for document processing.</p>
+            <p><strong>Technologies:</strong> BentoML, Langchain, LLM, VLLM, RAG, Vector Databases</p>
+            <div class="achievement">Handles 1000+ queries/day</div>
+            <div class="achievement">85% user satisfaction</div>
+            <div class="achievement">50% reduction in support tickets</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-train"></i> Railway Data SDK Development</h4>
+            <p><strong>Client:</strong> International Rail Technology Company</p>
+            <p><strong>Challenge:</strong> Create a unified SDK for accessing distributed data stored across MinIO and Trino systems.</p>
+            <p><strong>Solution:</strong> Developed a custom Python SDK with optimized query patterns and caching mechanisms for efficient data retrieval.</p>
+            <p><strong>Technologies:</strong> Python SDK, MinIO, Trino, Data Access Layer, Caching</p>
+            <div class="achievement">60% faster data access</div>
+            <div class="achievement">Developer-friendly API</div>
+        </div>
+
+        <h3>Technical Leadership & Innovation</h3>
+        <ul>
+            <li><strong>Algorithm Optimization:</strong> Collaborated with senior engineers to parallelize computational algorithms using multiprocessing and threading, achieving significant performance improvements</li>
+            <li><strong>Monitoring & Observability:</strong> Implemented comprehensive monitoring solutions using Grafana and Prometheus for production system health and performance tracking</li>
+            <li><strong>Security & Compliance:</strong> Ensured all solutions meet EU data protection requirements and industry security standards</li>
+            <li><strong>Knowledge Transfer:</strong> Mentor junior engineers and conduct technical training sessions on cloud-native technologies and data engineering best practices</li>
+        </ul>
+
+        <h3>Technologies & Tools</h3>
+        <div class="timeline-tech" style="margin-top: 1rem;">
+            <span class="tech-tag">Grafana</span>
+            <span class="tech-tag">PySpark</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">BentoML</span>
+            <span class="tech-tag">VLLM</span>
+            <span class="tech-tag">Langchain</span>
+            <span class="tech-tag">DataLake</span>
+            <span class="tech-tag">Prometheus</span>
+            <span class="tech-tag">AWS Textract</span>
+            <span class="tech-tag">Keycloak</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">MinIO</span>
+            <span class="tech-tag">Trino</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Flask</span>
+        </div>
+
+        <h3>Impact & Results</h3>
+        <p>
+            Through these diverse projects, I've contributed to digital transformation initiatives across multiple 
+            industries including energy, maritime, aerospace, and transportation. My work has consistently delivered 
+            measurable improvements in operational efficiency, data accessibility, and system reliability.
+        </p>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../index.html#contact" class="btn-primary">
+                <i class="fas fa-envelope"></i>
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Abhishek Payezhi Chegattil. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#experience">Experience</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality for Experience Page
+        function initThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const body = document.body;
+            
+            // Check for saved theme or default to light
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+            
+            // Theme toggle event listener
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = body.getAttribute('data-theme') || 'light';
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                setTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+                
+                // Add animation to the button
+                themeToggle.style.transform = 'rotate(360deg)';
+                setTimeout(() => {
+                    themeToggle.style.transform = 'rotate(0deg)';
+                }, 300);
+            });
+            
+            function setTheme(theme) {
+                body.setAttribute('data-theme', theme);
+                
+                // Update icon
+                if (theme === 'dark') {
+                    themeIcon.className = 'fas fa-sun';
+                } else {
+                    themeIcon.className = 'fas fa-moon';
+                }
+            }
+        }
+        
+        // Initialize theme toggle when page loads
+        document.addEventListener('DOMContentLoaded', initThemeToggle);
+    </script>
+</body>
+</html> 

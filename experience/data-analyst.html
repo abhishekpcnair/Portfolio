@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst and Backend Developer - Abhishek Payezhi Chegattil</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .experience-hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: white;
+            padding: 4rem 0;
+            margin-top: 70px;
+        }
+        .experience-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-button:hover {
+            color: var(--dark-blue);
+        }
+        .project-highlight {
+            background: var(--light-blue);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-blue);
+        }
+        .project-highlight h4 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        .achievement {
+            background: var(--success-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+        }
+        .impact-metric {
+            background: var(--warning-orange);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">Abhishek PC</span>
+                    <span class="beta-label">BETA</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Hero -->
+    <section class="experience-hero">
+        <div class="container">
+            <h1>Data Analyst and Backend Developer</h1>
+            <h2 style="margin: 0; font-weight: normal; opacity: 0.9;">Eternl ResilientTech Pvt Ltd</h2>
+            <p style="margin: 1rem 0 0 0; opacity: 0.8;">September 2017 - January 2020 | Bangalore, India</p>
+        </div>
+    </section>
+
+    <!-- Experience Content -->
+    <section class="experience-content">
+        <a href="../index.html#experience" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Experience Timeline
+        </a>
+
+        <h2>Role Overview</h2>
+        <p>
+            As a Data Analyst and Backend Developer at Eternl ResilientTech, I was responsible for developing 
+            IoT automation systems, cloud infrastructure design, and implementing machine learning solutions 
+            for energy sector optimization. This role combined hands-on development with data science and 
+            system architecture responsibilities.
+        </p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><strong>IoT System Development:</strong> Design and implement IoT automation solutions for energy management and optimization</li>
+            <li><strong>Data Analysis & ML:</strong> Perform numerical analysis on sensor data and develop predictive models for energy consumption and market trends</li>
+            <li><strong>Backend Development:</strong> Build scalable backend systems and APIs for IoT data processing and visualization</li>
+            <li><strong>Cloud Infrastructure:</strong> Design and manage AWS cloud infrastructure for handling production traffic and data storage</li>
+            <li><strong>Team Leadership:</strong> Lead frontend teams for API integration and coordinate cross-functional development efforts</li>
+        </ul>
+
+        <h3>Major Projects & Achievements</h3>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-gas-pump"></i> Smart Fuel Station Automation System</h4>
+            <p><strong>Challenge:</strong> Reduce energy consumption at fuel stations through intelligent IoT automation while maintaining operational efficiency.</p>
+            <p><strong>Solution:</strong> Developed comprehensive IoT automation system integrating smart sensors, automated lighting, HVAC optimization, and predictive maintenance algorithms.</p>
+            <p><strong>Implementation:</strong></p>
+            <ul>
+                <li>Deployed dual-source energy meters for real-time consumption monitoring</li>
+                <li>Implemented branch circuit meters for granular energy usage analysis</li>
+                <li>Created automated control systems for lighting and climate management</li>
+                <li>Built predictive maintenance algorithms for equipment optimization</li>
+            </ul>
+            <p><strong>Technologies:</strong> IoT Sensors, Python, Flask, MongoDB, Real-time Analytics, Automated Control Systems</p>
+            <div class="impact-metric">27% Energy Reduction</div>
+            <div class="achievement">ROI achieved in 8 months</div>
+            <div class="achievement">Zero system downtime</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-cloud"></i> Scalable Cloud Infrastructure for IoT Data</h4>
+            <p><strong>Challenge:</strong> Design cloud infrastructure capable of handling high-volume IoT data streams with real-time processing requirements.</p>
+            <p><strong>Solution:</strong> Architected and implemented comprehensive AWS-based infrastructure with auto-scaling capabilities and real-time data processing pipelines.</p>
+            <p><strong>Architecture Components:</strong></p>
+            <ul>
+                <li>Auto-scaling EC2 instances for variable workloads</li>
+                <li>Apache Kafka for real-time data streaming</li>
+                <li>MongoDB for flexible IoT data storage</li>
+                <li>Nginx for load balancing and SSL termination</li>
+                <li>Docker containers for microservices deployment</li>
+            </ul>
+            <p><strong>Technologies:</strong> AWS EC2, Apache Kafka, MongoDB, Nginx, Docker, Auto-scaling</p>
+            <div class="achievement">Handles 100K+ requests/hour</div>
+            <div class="achievement">99.9% uptime achieved</div>
+            <div class="achievement">50% cost optimization</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-chart-line"></i> Crude Oil Price Prediction System</h4>
+            <p><strong>Challenge:</strong> Develop machine learning models to predict crude oil price fluctuations for strategic business planning.</p>
+            <p><strong>Solution:</strong> Implemented comprehensive ML pipeline using multiple algorithms including linear regression and Gaussian models for time-series forecasting.</p>
+            <p><strong>Research & Implementation:</strong></p>
+            <ul>
+                <li>Conducted literature review on commodity price prediction methods</li>
+                <li>Collected and preprocessed historical oil price data and market indicators</li>
+                <li>Implemented and compared Linear Regression, Gaussian Process, and ARIMA models</li>
+                <li>Built ensemble methods for improved prediction accuracy</li>
+                <li>Created real-time prediction dashboard for business stakeholders</li>
+            </ul>
+            <p><strong>Technologies:</strong> Python, Scikit-learn, Pandas, NumPy, Time Series Analysis, Statistical Modeling</p>
+            <div class="achievement">78% prediction accuracy</div>
+            <div class="achievement">15-day forecast horizon</div>
+            <div class="achievement">Business strategy optimization</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-cogs"></i> IoT Sensor Data Processing Pipeline</h4>
+            <p><strong>Challenge:</strong> Process and analyze data from multiple IoT sensor types to detect anomalies and optimize energy consumption patterns.</p>
+            <p><strong>Solution:</strong> Built comprehensive data processing pipeline with real-time anomaly detection and automated alerting systems.</p>
+            <p><strong>Sensor Types Integrated:</strong></p>
+            <ul>
+                <li><strong>Dual Source Energy Meters:</strong> Monitor primary and backup power consumption</li>
+                <li><strong>Branch Circuit Meters:</strong> Track individual circuit-level energy usage</li>
+                <li><strong>Environmental Sensors:</strong> Temperature, humidity, and occupancy detection</li>
+                <li><strong>Equipment Sensors:</strong> Vibration, temperature, and operational status monitoring</li>
+            </ul>
+            <p><strong>Technologies:</strong> Python, Apache Airflow, CrateDB, APScheduler, Celery, Statistical Analysis</p>
+            <div class="achievement">Real-time anomaly detection</div>
+            <div class="achievement">Prevented 12 equipment failures</div>
+            <div class="achievement">30% maintenance cost reduction</div>
+        </div>
+
+        <div class="project-highlight">
+            <h4><i class="fas fa-users-cog"></i> Frontend Team API Integration Leadership</h4>
+            <p><strong>Challenge:</strong> Coordinate frontend development teams to integrate with complex backend APIs and ensure seamless user experience.</p>
+            <p><strong>Solution:</strong> Led cross-functional teams in API design and integration, establishing development standards and documentation practices.</p>
+            <p><strong>Leadership Activities:</strong></p>
+            <ul>
+                <li>Designed RESTful API specifications and documentation</li>
+                <li>Conducted technical training sessions on API integration best practices</li>
+                <li>Implemented code review processes and quality standards</li>
+                <li>Coordinated agile development workflows between backend and frontend teams</li>
+            </ul>
+            <p><strong>Technologies:</strong> REST APIs, API Documentation, Agile Methodology, Code Review</p>
+            <div class="achievement">Led team of 8 developers</div>
+            <div class="achievement">40% faster integration cycles</div>
+            <div class="achievement">Zero API-related production issues</div>
+        </div>
+
+        <h3>Technical Skills Developed</h3>
+        <div class="timeline-tech" style="margin-top: 1rem;">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Apache Airflow</span>
+            <span class="tech-tag">Nginx</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Apache Kafka</span>
+            <span class="tech-tag">CrateDB</span>
+            <span class="tech-tag">APScheduler</span>
+            <span class="tech-tag">Celery</span>
+            <span class="tech-tag">AWS EC2</span>
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Machine Learning</span>
+        </div>
+
+        <h3>Key Learnings & Impact</h3>
+        <ul>
+            <li><strong>Energy Optimization:</strong> Gained deep expertise in energy management systems and IoT automation for sustainability</li>
+            <li><strong>Scalable Architecture:</strong> Learned to design systems that can handle growing data volumes and user bases</li>
+            <li><strong>Cross-functional Leadership:</strong> Developed skills in leading diverse technical teams and coordinating complex projects</li>
+            <li><strong>Data-Driven Decision Making:</strong> Applied machine learning and statistical analysis to solve real business problems</li>
+            <li><strong>Production Systems:</strong> Experience in building and maintaining reliable, high-availability production systems</li>
+        </ul>
+
+        <h3>Business Impact</h3>
+        <p>
+            This role at Eternl ResilientTech provided foundational experience in building production-grade 
+            systems that deliver measurable business value. The combination of IoT automation, cloud 
+            infrastructure, and machine learning created comprehensive solutions that significantly improved 
+            operational efficiency and cost savings for clients in the energy sector.
+        </p>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="../index.html#contact" class="btn-primary">
+                <i class="fas fa-envelope"></i>
+                Learn More About This Experience
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Abhishek Payezhi Chegattil. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#experience">Experience</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality for Experience Page
+        function initThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const body = document.body;
+            
+            // Check for saved theme or default to light
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+            
+            // Theme toggle event listener
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = body.getAttribute('data-theme') || 'light';
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                setTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+                
+                // Add animation to the button
+                themeToggle.style.transform = 'rotate(360deg)';
+                setTimeout(() => {
+                    themeToggle.style.transform = 'rotate(0deg)';
+                }, 300);
+            });
+            
+            function setTheme(theme) {
+                body.setAttribute('data-theme', theme);
+                
+                // Update icon
+                if (theme === 'dark') {
+                    themeIcon.className = 'fas fa-sun';
+                } else {
+                    themeIcon.className = 'fas fa-moon';
+                }
+            }
+        }
+        
+        // Initialize theme toggle when page loads
+        document.addEventListener('DOMContentLoaded', initThemeToggle);
+    </script>
+</body>
+</html> 
