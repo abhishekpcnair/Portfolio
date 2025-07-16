@@ -35,32 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Navbar Background on Scroll
-    const navbar = document.querySelector('.navbar');
-    
-    function updateNavbarBackground() {
-        const currentTheme = document.body.getAttribute('data-theme') || 'light';
-        
-        if (window.scrollY > 50) {
-            if (currentTheme === 'dark') {
-                navbar.style.background = 'rgba(13, 17, 23, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
-            } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            }
-        } else {
-            if (currentTheme === 'dark') {
-                navbar.style.background = 'rgba(13, 17, 23, 0.95)';
-            } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
-            navbar.style.boxShadow = 'none';
-        }
-    }
-    
-    window.addEventListener('scroll', updateNavbarBackground);
-
     // Active Navigation Link Highlighting
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -727,6 +701,30 @@ function initThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const body = document.body;
+    const navbar = document.querySelector('.navbar');
+    
+    function updateNavbarBackground() {
+        if (!navbar) return; // Guard clause if navbar not found
+        
+        const currentTheme = body.getAttribute('data-theme') || 'light';
+        
+        if (window.scrollY > 50) {
+            if (currentTheme === 'dark') {
+                navbar.style.background = 'rgba(13, 17, 23, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        } else {
+            if (currentTheme === 'dark') {
+                navbar.style.background = 'rgba(13, 17, 23, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+            navbar.style.boxShadow = 'none';
+        }
+    }
     
     // Check for saved theme or default to light
     const savedTheme = localStorage.getItem('theme') || 'light';

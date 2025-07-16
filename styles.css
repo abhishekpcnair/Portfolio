@@ -155,7 +155,7 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .logo-svg {
@@ -163,8 +163,23 @@ body {
 }
 
 .logo-svg:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 2px 4px rgba(50, 108, 229, 0.3));
+    transform: rotate(5deg) scale(1.05);
+}
+
+.logo-svg circle,
+.logo-svg polygon {
+    transition: var(--transition-normal);
+}
+
+/* Theme-aware logo colors */
+[data-theme="dark"] .logo-svg circle,
+[data-theme="dark"] .logo-svg polygon {
+    stroke: var(--primary-blue);
+}
+
+[data-theme="dark"] .logo-svg circle[fill="var(--primary-blue)"],
+[data-theme="dark"] .logo-svg circle[fill="var(--secondary-blue)"] {
+    fill: var(--primary-blue);
 }
 
 .logo-text {
